@@ -39,7 +39,7 @@ private static int edition;
 
 13. Не пользуясь средствами автогенерации кода переопределить для класса ProgrammerBook методы equals(), hashCode() и toString().
 ```Java
-<public class ProgrammerBook extends Book{ 
+public class ProgrammerBook extends Book { 
 private String language;
 private int level;
 }
