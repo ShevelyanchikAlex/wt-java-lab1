@@ -1,0 +1,5 @@
+java -jar ../out/artifacts/task9/WT_LAB1.jar
+
+Out:
+Weight of balls in basket: 29
+Count of blue balls: 2

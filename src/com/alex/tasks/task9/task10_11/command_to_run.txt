@@ -1,0 +1,5 @@
+java -cp ../bin com.alex.tasks.task9.Task9
+
+Out:
+Weight of balls in basket: 29
+Count of blue balls: 2
