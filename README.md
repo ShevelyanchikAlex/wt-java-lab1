@@ -31,17 +31,17 @@
 12.  Не пользуясь средствами автогенерации кода переопределить для класса Book методы equals(), hashCode() и toString().
 ```Java
 public class Book {
-private String title;
-private String author; private int price;
-private static int edition;
+  private String title;
+  private String author; private int price;
+  private static int edition;
 }
 ```
 
 13. Не пользуясь средствами автогенерации кода переопределить для класса ProgrammerBook методы equals(), hashCode() и toString().
 ```Java
 public class ProgrammerBook extends Book { 
-private String language;
-private int level;
+  private String language;
+  private int level;
 }
 ```
 
