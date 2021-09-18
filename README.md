@@ -29,17 +29,20 @@
 11.  Создать запускной jar-файл и запустить приложение, созданное при решении задачи 9-ть.
 
 12.  Не пользуясь средствами автогенерации кода переопределить для класса Book методы equals(), hashCode() и toString().
-<public class Book {
+```Java
+public class Book {
 private String title;
 private String author; private int price;
 private static int edition;
-} >
+}
+```
 
 13. Не пользуясь средствами автогенерации кода переопределить для класса ProgrammerBook методы equals(), hashCode() и toString().
+```Java
 <public class ProgrammerBook extends Book{ private String language;
 private int level;
-} >
-
+}
+```
 
 14. Не пользуясь средствами автогенерации кода переопределить для класса Book из задачи 12 метод clone().
 
