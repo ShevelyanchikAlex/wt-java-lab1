@@ -1,7 +1,7 @@
 # Java Fundamentals
 
 1.  Вычислить значение выражения по формуле (все переменные принимают действительные значения).
-<img width="150" height="100" alt="Снимок экрана 2021-09-18 в 22 10 22" src="https://user-images.githubusercontent.com/74743036/133906069-00df4f9e-1ce0-492f-bca8-a546dd040c93.png">
+<img width="200" height="150" alt="Снимок экрана 2021-09-18 в 22 10 22" src="https://user-images.githubusercontent.com/74743036/133906069-00df4f9e-1ce0-492f-bca8-a546dd040c93.png">
 
 2.  Для данной области составить программу, которая печатает true, если точка с координатами (x,y) принадлежит закрашенной области, и false  - в противном случае.
-<img width="300" alt="Снимок экрана 2021-09-18 в 22 18 59" src="https://user-images.githubusercontent.com/74743036/133906200-f4984451-ee78-4b31-8596-a69a98e78d4f.png">
+<img width="250" alt="Снимок экрана 2021-09-18 в 22 18 59" src="https://user-images.githubusercontent.com/74743036/133906200-f4984451-ee78-4b31-8596-a69a98e78d4f.png">
