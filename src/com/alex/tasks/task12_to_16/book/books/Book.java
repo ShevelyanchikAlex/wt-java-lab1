@@ -2,7 +2,7 @@ package com.alex.tasks.task12_to_16.book.books;
 
 import com.alex.tasks.task12_to_16.isbn.ISBN;
 
-public class Book implements Comparable<Book> {
+public class Book implements Comparable<Book>, Cloneable {
     private String title;
     private String author;
     private int price;
@@ -63,8 +63,10 @@ public class Book implements Comparable<Book> {
     }
 
     @Override
-    protected Object clone() {
-        return new Book(this.title, this.author, this.price, this.isbn);
+    protected Book clone() throws CloneNotSupportedException {
+        Book clonedBook = (Book) super.clone();
+        clonedBook.isbn = isbn.clone();
+        return clonedBook;
     }
 
     @Override
