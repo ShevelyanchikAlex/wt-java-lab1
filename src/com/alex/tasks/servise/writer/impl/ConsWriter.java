@@ -12,4 +12,9 @@ public class ConsWriter implements Writer {
     public void writeLn(String str) {
         System.out.println(str);
     }
+
+    @Override
+    public void writeF(String format, Object... args) {
+        System.out.printf(format, args);
+    }
 }

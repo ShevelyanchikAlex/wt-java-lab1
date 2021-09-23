@@ -25,9 +25,14 @@ public class Task3 {
     }
 
     private static void printTable(Writer writer, double a, double b, double h) {
+        final String line = "-------------------------";
+        writer.writeLn(line);
+        writer.writeF("|\t%4s\t|\t%5s\t|\n", 'x', 'y');
+        writer.writeLn(line);
         for (double i = a; i <= b; i += h) {
-            writer.writeLn(i + " | " + Math.tan(i));
+            writer.writeF("|\t%4.1f\t|\t%4.3f\t|\n", i, Math.tan(i));
         }
+        writer.writeLn(line);
     }
 
 }
