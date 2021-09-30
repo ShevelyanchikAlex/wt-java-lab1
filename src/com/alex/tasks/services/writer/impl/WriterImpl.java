@@ -1,8 +1,8 @@
-package com.alex.tasks.servise.writer.impl;
+package com.alex.tasks.services.writer.impl;
 
-import com.alex.tasks.servise.writer.interfaces.Writer;
+import com.alex.tasks.services.writer.interfaces.Writer;
 
-public class ConsWriter implements Writer {
+public class WriterImpl implements Writer {
     @Override
     public void write(String str) {
         System.out.print(str);
