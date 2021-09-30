@@ -1,19 +1,17 @@
 package com.alex.tasks.task2.area;
 
-public class Rectangle {
-    private final double xMin;
-    private final double yMax;
-    private final double xMax;
-    private final double yMin;
+import com.alex.tasks.task2.point.Point;
 
-    public Rectangle(double xMin, double yMax, double xMax, double yMin) {
-        this.xMin = xMin;
-        this.yMax = yMax;
-        this.xMax = xMax;
-        this.yMin = yMin;
+public class Rectangle {
+    private final Point pointMin;
+    private final Point pointMax;
+
+    public Rectangle(Point pointMin, double width, double height) {
+        this.pointMin = pointMin;
+        this.pointMax = new Point(pointMin.getX() + width, pointMin.getY() + height);
     }
 
     public boolean containsPoint(double x, double y) {
-        return (x >= xMin && x <= xMax && y >= yMin && y <= yMax);
+        return (x >= pointMin.getX() && x <= pointMax.getX() && y >= pointMin.getY() && y <= pointMax.getY());
     }
 }

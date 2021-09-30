@@ -1,31 +1,27 @@
 package com.alex.tasks.task2;
 
-import com.alex.tasks.servise.reader.impl.ConsReader;
-import com.alex.tasks.servise.reader.interfaces.Reader;
+import com.alex.tasks.services.reader.impl.ReaderImpl;
+import com.alex.tasks.services.reader.interfaces.Reader;
 import com.alex.tasks.task2.area.Area;
 import com.alex.tasks.task2.area.Rectangle;
-import com.alex.tasks.servise.writer.impl.ConsWriter;
-import com.alex.tasks.servise.writer.interfaces.Writer;
+import com.alex.tasks.services.writer.impl.WriterImpl;
+import com.alex.tasks.services.writer.interfaces.Writer;
+import com.alex.tasks.task2.point.Point;
 
 import java.util.ArrayList;
 
 public class Task2 {
 
     public static void main(String[] args) {
-        Reader reader = new ConsReader();
-        Writer writer = new ConsWriter();
+        Reader reader = new ReaderImpl();
+        Writer writer = new WriterImpl();
+
         ArrayList<Rectangle> rectangles = new ArrayList<>();
-        rectangles.add(new Rectangle(-4, 5, 4, 0));
-        rectangles.add(new Rectangle(-6, 0, 6, -3));
+        rectangles.add(new Rectangle(new Point(-4, 0), 8, 5));
+        rectangles.add(new Rectangle(new Point(-6, -3), 12, 3));
         Area area = new Area(rectangles);
 
-        writer.writeLn("Input x: ");
-        double x = reader.readDouble();
-
-        writer.writeLn("Input y: ");
-        double y = reader.readDouble();
-
-        writer.writeLn(String.valueOf(area.contains(x, y)));
+        writer.writeLn(String.valueOf(area.contains(new Point(reader.readDouble(), reader.readDouble()))));
     }
 
 
