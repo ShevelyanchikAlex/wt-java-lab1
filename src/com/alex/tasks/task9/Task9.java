@@ -3,13 +3,13 @@ package com.alex.tasks.task9;
 import com.alex.tasks.task9.basketball.equipment.Ball;
 import com.alex.tasks.task9.basketball.equipment.Basket;
 import com.alex.tasks.task9.enums.Color;
-import com.alex.tasks.servise.writer.impl.ConsWriter;
-import com.alex.tasks.servise.writer.interfaces.Writer;
+import com.alex.tasks.services.writer.impl.WriterImpl;
+import com.alex.tasks.services.writer.interfaces.Writer;
 
 public class Task9 {
 
     public static void main(String[] args) {
-        Writer writer = new ConsWriter();
+        Writer writer = new WriterImpl();
 
         Basket basket = new Basket();
         basket.addBall(new Ball(10, Color.GREEN));

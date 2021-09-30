@@ -1,14 +1,14 @@
 package com.alex.tasks.task8;
 
-import com.alex.tasks.servise.writer.impl.ConsWriter;
-import com.alex.tasks.servise.writer.interfaces.Writer;
+import com.alex.tasks.services.writer.impl.WriterImpl;
+import com.alex.tasks.services.writer.interfaces.Writer;
 
 import java.util.Arrays;
 
 public class Task8 {
 
     public static void main(String[] args) {
-        Writer writer = new ConsWriter();
+        Writer writer = new WriterImpl();
         int[] arr1 = {1, 5, 7, 14};
         int[] arr2 = {0, 2, 4, 90};
 

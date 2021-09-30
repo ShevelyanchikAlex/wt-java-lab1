@@ -1,17 +1,17 @@
 package com.alex.tasks.task7;
 
-import com.alex.tasks.servise.reader.impl.ConsReader;
-import com.alex.tasks.servise.reader.interfaces.Reader;
-import com.alex.tasks.servise.writer.impl.ConsWriter;
-import com.alex.tasks.servise.writer.interfaces.Writer;
+import com.alex.tasks.services.reader.impl.ReaderImpl;
+import com.alex.tasks.services.reader.interfaces.Reader;
+import com.alex.tasks.services.writer.impl.WriterImpl;
+import com.alex.tasks.services.writer.interfaces.Writer;
 
 import java.util.Arrays;
 
 public class Task7 {
 
     public static void main(String[] args) {
-        Reader reader = new ConsReader();
-        Writer writer = new ConsWriter();
+        Reader reader = new ReaderImpl();
+        Writer writer = new WriterImpl();
 
         writer.writeLn("Input size of array: ");
         int arrSize = reader.readInt();

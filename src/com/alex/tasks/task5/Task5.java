@@ -1,12 +1,12 @@
 package com.alex.tasks.task5;
 
-import com.alex.tasks.servise.writer.impl.ConsWriter;
-import com.alex.tasks.servise.writer.interfaces.Writer;
+import com.alex.tasks.services.writer.impl.WriterImpl;
+import com.alex.tasks.services.writer.interfaces.Writer;
 
 public class Task5 {
 
     public static void main(String[] args) {
-        Writer writer = new ConsWriter();
+        Writer writer = new WriterImpl();
 
         int[] sequence = {1, 3, -8, 0, 5, 7, 10};
         writer.write(String.valueOf(getMinAmountOfElements(sequence)));
