@@ -1,4 +1,4 @@
-package com.alex.tasks.services.writer.interfaces;
+package com.alex.tasks.service.writer;
 
 public interface Writer {
     void write(String str);

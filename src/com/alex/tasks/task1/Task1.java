@@ -1,18 +1,21 @@
 package com.alex.tasks.task1;
 
-import com.alex.tasks.services.reader.impl.ReaderImpl;
-import com.alex.tasks.services.reader.interfaces.Reader;
-import com.alex.tasks.services.writer.impl.WriterImpl;
-import com.alex.tasks.services.writer.interfaces.Writer;
+import com.alex.tasks.service.reader.impl.ReaderImpl;
+import com.alex.tasks.service.reader.Reader;
+import com.alex.tasks.service.writer.impl.WriterImpl;
+import com.alex.tasks.service.writer.Writer;
 
 public class Task1 {
 
     public static void main(String[] args) {
-        Reader reader = new ReaderImpl();
-        Writer writer = new WriterImpl();
+        Reader reader = ReaderImpl.getInstance();
+        Writer writer = WriterImpl.getInstance();
 
+        writer.writeLn("Enter x: ");
         double x = reader.readDouble();
+        writer.writeLn("Enter y: ");
         double y = reader.readDouble();
+
         writer.writeLn("Result: " + calculateExpression(x, y));
     }
 

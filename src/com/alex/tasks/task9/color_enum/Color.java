@@ -1,4 +1,4 @@
-package com.alex.tasks.task9.enums;
+package com.alex.tasks.task9.color_enum;
 
 public enum Color {
     ORANGE,

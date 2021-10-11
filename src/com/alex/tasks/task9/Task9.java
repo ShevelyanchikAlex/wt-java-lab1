@@ -2,14 +2,14 @@ package com.alex.tasks.task9;
 
 import com.alex.tasks.task9.basketball.equipment.Ball;
 import com.alex.tasks.task9.basketball.equipment.Basket;
-import com.alex.tasks.task9.enums.Color;
-import com.alex.tasks.services.writer.impl.WriterImpl;
-import com.alex.tasks.services.writer.interfaces.Writer;
+import com.alex.tasks.task9.color_enum.Color;
+import com.alex.tasks.service.writer.impl.WriterImpl;
+import com.alex.tasks.service.writer.Writer;
 
 public class Task9 {
 
     public static void main(String[] args) {
-        Writer writer = new WriterImpl();
+        Writer writer = WriterImpl.getInstance();
 
         Basket basket = new Basket();
         basket.addBall(new Ball(10, Color.GREEN));

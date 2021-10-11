@@ -1,4 +1,4 @@
-package com.alex.tasks.services.reader.interfaces;
+package com.alex.tasks.service.reader;
 
 public interface Reader {
     double readDouble();

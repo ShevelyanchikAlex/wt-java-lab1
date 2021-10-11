@@ -1,14 +1,15 @@
 package com.alex.tasks.task8;
 
-import com.alex.tasks.services.writer.impl.WriterImpl;
-import com.alex.tasks.services.writer.interfaces.Writer;
+import com.alex.tasks.service.writer.impl.WriterImpl;
+import com.alex.tasks.service.writer.Writer;
 
 import java.util.Arrays;
 
 public class Task8 {
 
     public static void main(String[] args) {
-        Writer writer = new WriterImpl();
+        Writer writer = WriterImpl.getInstance();
+
         int[] arr1 = {1, 5, 7, 14};
         int[] arr2 = {0, 2, 4, 90};
 
@@ -27,7 +28,7 @@ public class Task8 {
                 }
             }
             if (!isInserted) {
-                indexes[i] = arr1.length -1;
+                indexes[i] = arr1.length - 1;
             }
         }
         return indexes;

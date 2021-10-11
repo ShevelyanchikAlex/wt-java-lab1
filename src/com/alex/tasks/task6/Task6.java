@@ -1,16 +1,16 @@
 package com.alex.tasks.task6;
 
-import com.alex.tasks.services.reader.impl.ReaderImpl;
-import com.alex.tasks.services.reader.interfaces.Reader;
-import com.alex.tasks.services.writer.impl.WriterImpl;
-import com.alex.tasks.services.writer.interfaces.Writer;
+import com.alex.tasks.service.reader.impl.ReaderImpl;
+import com.alex.tasks.service.reader.Reader;
+import com.alex.tasks.service.writer.impl.WriterImpl;
+import com.alex.tasks.service.writer.Writer;
 
 
 public class Task6 {
 
     public static void main(String[] args) {
-        Reader reader = new ReaderImpl();
-        Writer writer = new WriterImpl();
+        Reader reader = ReaderImpl.getInstance();
+        Writer writer = WriterImpl.getInstance();
 
         writer.writeLn("Input size of array: ");
         int arrSize = reader.readInt();
