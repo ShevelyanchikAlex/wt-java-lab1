@@ -1,8 +1,8 @@
 package com.alex.tasks.task9;
 
-import com.alex.tasks.task9.basketball.equipment.Ball;
-import com.alex.tasks.task9.basketball.equipment.Basket;
-import com.alex.tasks.task9.color_enum.Color;
+import com.alex.tasks.task9.entity.Ball;
+import com.alex.tasks.task9.entity.Basket;
+import com.alex.tasks.task9.entity.Color;
 import com.alex.tasks.service.writer.impl.WriterImpl;
 import com.alex.tasks.service.writer.Writer;
 

@@ -1,13 +1,11 @@
-package com.alex.tasks.task2.area;
+package com.alex.tasks.task2.entity;
 
-import com.alex.tasks.task2.point.Point;
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class Area {
-    private final ArrayList<Rectangle> rectangles;
+    private final List<Rectangle> rectangles;
 
-    public Area(ArrayList<Rectangle> rectangles) {
+    public Area(List<Rectangle> rectangles) {
         this.rectangles = rectangles;
     }
 

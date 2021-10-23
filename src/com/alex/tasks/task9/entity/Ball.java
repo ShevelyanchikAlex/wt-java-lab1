@@ -1,6 +1,4 @@
-package com.alex.tasks.task9.basketball.equipment;
-
-import com.alex.tasks.task9.color_enum.Color;
+package com.alex.tasks.task9.entity;
 
 public class Ball {
     private final int weight;

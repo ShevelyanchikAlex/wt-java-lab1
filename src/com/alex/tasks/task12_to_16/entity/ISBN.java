@@ -1,4 +1,4 @@
-package com.alex.tasks.task12_to_16.isbn;
+package com.alex.tasks.task12_to_16.entity;
 
 public class ISBN implements Comparable<ISBN>, Cloneable {
     private final int bookNumber;

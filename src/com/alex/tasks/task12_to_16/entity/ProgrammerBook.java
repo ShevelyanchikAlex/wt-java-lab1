@@ -1,6 +1,4 @@
-package com.alex.tasks.task12_to_16.book.books;
-
-import com.alex.tasks.task12_to_16.isbn.ISBN;
+package com.alex.tasks.task12_to_16.entity;
 
 public class ProgrammerBook extends Book {
     private String language;

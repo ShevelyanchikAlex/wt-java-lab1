@@ -1,4 +1,4 @@
-package com.alex.tasks.task2.point;
+package com.alex.tasks.task2.entity;
 
 public class Point {
     private final double x;

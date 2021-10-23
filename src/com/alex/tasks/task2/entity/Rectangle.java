@@ -1,6 +1,4 @@
-package com.alex.tasks.task2.area;
-
-import com.alex.tasks.task2.point.Point;
+package com.alex.tasks.task2.entity;
 
 public class Rectangle {
     private final Point pointMin;

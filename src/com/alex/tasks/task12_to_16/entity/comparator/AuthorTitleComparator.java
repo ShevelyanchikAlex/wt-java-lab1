@@ -1,6 +1,6 @@
-package com.alex.tasks.task12_to_16.book.comparators;
+package com.alex.tasks.task12_to_16.entity.comparator;
 
-import com.alex.tasks.task12_to_16.book.books.Book;
+import com.alex.tasks.task12_to_16.entity.Book;
 
 import java.util.Comparator;
 
