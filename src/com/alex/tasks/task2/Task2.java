@@ -28,8 +28,22 @@ public class Task2 {
         double y = reader.readDouble();
 
         writer.writeLn(String.valueOf(area.contains(new Point(x, y))));
+//        writer.write(String.valueOf(contains(1, 1)));
     }
 
+    //Second solution with a simple algorithm
+    public static boolean contains(double x, double y) {
+        boolean isContains = false;
+
+        if (y >= 0 && y <= 5) {
+            isContains = x >= -4 && x <= 4;
+        } else {
+            if (y >= -3 && y <= 0) {
+                isContains = x >= -6 && x <= 6;
+            }
+        }
+        return isContains;
+    }
 
 }
 
